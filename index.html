@@ -561,7 +561,7 @@
                             soon.</p>
                         </div>
                         <!-- contact info -->
-                        <div class="mt-12 flex flex-col lg:flex-row">
+                        <div class="mt-12 flex flex-col md:flex-row lg:flex-row lg:justify-between gap-8">
                             <div class="space-y-8 border border-[#1313181A] p-3 rounded-md">
                                 <!-- phone number -->
                                 <div class="space-y-4 bg-[#BCED6D1A] p-9 rounded-md">
@@ -584,8 +584,30 @@
                                 </div>
                             </div>
                             <!-- contact form -->
-                            <div>
+                            <div class="flex-1">
+                                <form class="grid gap-10 grid-cols-1  lg:grid-cols-2">
+                                  
+                                    <label class="text-xl font-bold">Your Name 
+                                        <input type="text" placeholder="Enter your full name" class="input input-bordered w-full" />
+                                    </label>
+                                   
 
+                                    <label class="text-xl font-bold"> Your Email:
+                                        <input type="email" placeholder="Enter your email" class="input input-bordered w-full" />
+                                    </label>
+                                    <label class="text-xl font-bold"> Your Subject:
+                                        <input type="text" placeholder="Enter your email" class="input input-bordered w-full" />
+                                    </label>
+                                    <label class="text-xl font-bold"> Your Phone Number:
+                                        <input type="tel" placeholder="Enter your email" class="input input-bordered w-full" />
+                                    </label>
+                                </form>
+                               
+                                <label class="form-control mt-6 text-xl font-bold">
+                                      Your bio
+                                    <textarea class="textarea textarea-bordered h-32  md:h-80 lg:h-80" placeholder="Write your message"></textarea>
+                                  </label>
+                                  <button class="mt-20 btn btn-error w-full text-white">Send Message</button>
                             </div>
                         </div>
                 </section>
